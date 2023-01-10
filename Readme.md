@@ -18,7 +18,7 @@ Tabela zawiera informacje odnośnie rodzajów mięsa, sosów i warzyw zawartych 
 
 ![](/OrderKebab.png)
 
-Tabela zawiera infrofmacje na temat klientów zamawiających dania z restauracji w formie zdalnej. Wśród tychże wymienić można imiona, nazwiska, numery telefonów, adresy zamieszkania, dania jakie zostały zamówione i ich ilość.
+Tabela zawiera informacje na temat klientów zamawiających dania z restauracji w formie zdalnej. Wśród tychże wymienić można imiona, nazwiska, numery telefonów, adresy zamieszkania, dania jakie zostały zamówione i ich ilość.
 
 ## Zapytanie 1
 
@@ -43,7 +43,7 @@ INNER JOIN AllKebab ON(AllKebab.KebabID = OrderKebab.AllKebabId )
 WHERE Meat IN("Chicken", "Mutton");
 ```
 
-Zapytanie wyświetla dane o osobach, które zamówiły dania mięsne. będą to imiona, nazwiska, numery telefonów i adresy. Na końcu podana jest informacja jakie danie zostało zamówione.
+Zapytanie wyświetla dane o osobach, które zamówiły dania mięsne. Będą to imiona, nazwiska, numery telefonów i adresy. Na końcu podana jest informacja jakie danie zostało zamówione.
 
 ## Zapytanie 3
 
@@ -55,7 +55,7 @@ FROM  OrderKebab INNER JOIN AllKebab ON (OrderKebab.AllKebabId = AllKebab.KebabI
 INNER JOIN Ingredients ON (OrderKebab.AllKebabId = Ingredients.AllKebabId);
 ```
 
-Zapytanie pozwala uzyskać informacje odnośnie Numerów telefonów, adresów osób zamawiających oraz opisy, i informacje o sosach jakie zostały dodane do zamówień.
+Zapytanie pozwala uzyskać informacje odnośnie numerów telefonów, adresów osób zamawiających oraz opisy, i informacje o sosach jakie zostały dodane do zamówień.
 
 ## Zapytanie 4
 
