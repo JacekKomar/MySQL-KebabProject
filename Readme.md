@@ -27,7 +27,7 @@ Tabela zawiera infrofmacje na temat klientów zamawiających dania z restauracji
 ```
 SELECT AllKebab.KebabName, AllKebab.Specification, CONCAT(Ingredients.Meat, Ingredients.Sauce, Ingredients.Vegetables) AS Ingredients, AllKebab.Price AS PriceInPLN
 FROM AllKebab
-INNER JOIN Ingredients ON (AllKebab.KebabName = Ingredients.KebabName);
+INNER JOIN Ingredients ON (AllKebab.KebabID = Ingredients.AllKebabId);
 ```
 
 Zadaniem zapytania jest szczegółowo przedstawić ofertę restauracji. Wyświetla wszystkie dania wraz z ich opisem, składnikami oraz ceną.
